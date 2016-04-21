@@ -6,7 +6,7 @@ class Product
 
 	def initialize (options={})
 		@title = options[ :title]
-		@orice = options [ :price]
+		@price = options [ :price]
 		@stock = options [ :stock]
 
 		#after we collect information throw it into products
@@ -15,6 +15,18 @@ class Product
 
 	def self.all
 		@@products
+	end
+
+	def self.in_stock
+		@@products.select { |products| products.in_stock?}
+	end
+
+	def in_stock?
+		@stock > 0
+	end
+
+	def self.list
+		@@products.sort_by(&:title)
 	end
 
 	private
