@@ -6,10 +6,10 @@ class Transaction
 
 	def initialize (customer, product)
 		@id = @@count
-		@@count += 1
 		@customer = customer
 		@product = product
 		add_to_transactions
+		@@count += 1
 
 	end
 
@@ -24,8 +24,8 @@ class Transaction
 	end 
 
 	def add_to_transactions
-		if @product.stock == 0
-			raise OutOfStockError, " '#{product.title}' already exists."
+		if @product.stock < 1
+			raise OutOfStockError, " '#{product.title}' is out of stock."
 		else
 			@product.reduce_stock
 			@@transactions << self
