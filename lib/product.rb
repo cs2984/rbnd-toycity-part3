@@ -29,6 +29,12 @@ class Product
 		@@products.sort_by(&:title)
 	end
 
+	def reduce_stock
+		@stock -= 1 
+	end
+
+	
+
 	private
 
 	def self.find_by_title (title)

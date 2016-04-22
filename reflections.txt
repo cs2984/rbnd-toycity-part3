@@ -1,0 +1,7 @@
+1. This project took me several afternoons to complete. I found that once I had by product.rb file working, the customer.rb basically matched it and then it was just figuring how to tie to the two files together within the transaction.rb file. I generally have trouble organizing my logic and making sure that what I’m writing is the actual value i want outputted. 
+
+2. My biggest obstacle was figuring out how to access the correct data at within each section. I struggled with understanding class variables and how they differed from the hashes that we had used previously. Basically when to use @@var versus @var what difficult. 
+
+3.I added a list method for products and customers and had each list print them out in alphabetical order. I thought that being able to sort products would be helpful in this situation. 
+
+4. I struggle with wondering if the way I’m writing something is best way to write it. I find myself constantly looking at the Udacity discussion page and slack pages trying to see if the way I’m thinking about a solution is similar to what other people try to implement. I know that i need to get more confident in knowing that the method I’m doing is just as correct as a slightly different method by someone else. I definitely still struggle with the problem of the blank code page where I have to write something from scratch. A blank text editor page is my worst nightmare because I like having some sort of road map to the end goal. 

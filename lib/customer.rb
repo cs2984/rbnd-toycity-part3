@@ -16,6 +16,10 @@ class Customer
 		@@customers.sort_by(&:name)
 	end
 	
+	def purchase(product)
+		Transaction.new(self, product)
+	end
+	
 	private 
 
 		def self.find_by_name(name)
